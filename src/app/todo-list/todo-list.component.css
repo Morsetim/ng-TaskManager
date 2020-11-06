@@ -1,0 +1,74 @@
+input {
+  margin-top: 50px;
+  width: 55%;
+}
+
+.form {
+  display: flex;
+}
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  animation: moveInRight 1s ease-out;
+  background-color: black;
+  color: white;
+}
+span {
+  color: red;
+  font-size: 21px;
+  cursor: pointer;
+  animation: moveInRight 1s ease-out .75s;
+  animation-fill-mode: backwards;
+}
+#deleteIcon {
+  color: red;
+}
+.fa-check {
+  color: green;
+}
+.fa-reply-all {
+  color: green;
+}
+.fa{
+  padding: 5px;
+}
+
+button.btn-danger:focus {
+  outline: none;
+}
+
+.btn {
+  font-size: 39px;
+  border-radius: 50% 50%;
+  height: 60px;
+  width: 70px;
+  margin-top: 35px;
+  padding: 0;
+  font-weight: 100;
+  text-align: center;
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 3;
+  cursor: pointer;
+}
+
+
+@keyframes moveInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(100px);
+  }
+
+  80% {
+      transform: translateX(-10px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+
+}
